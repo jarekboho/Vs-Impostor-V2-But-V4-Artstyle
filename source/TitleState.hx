@@ -182,8 +182,8 @@ class TitleState extends MusicBeatState
 
 		titleText = new FlxSprite(300, FlxG.height * 0.855);
 		titleText.frames = Paths.getSparrowAtlas('menuBooba/startText');
-		titleText.animation.addByPrefix('idle', "EnterIdle", 24);
-		titleText.animation.addByPrefix('press', "EnterStart", 24);
+		titleText.animation.addByPrefix('idle', "EnterIdle", 24, false);
+		titleText.animation.addByPrefix('press', "EnterStart", 24, false);
 		titleText.antialiasing = true;
 		titleText.animation.play('idle');
 		titleText.updateHitbox();
